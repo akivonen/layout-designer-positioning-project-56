@@ -1,0 +1,10 @@
+@mixin bold-uppercase {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@mixin media($max-width) {
+  @media screen and ($max-width) {
+    @content;
+  }
+}
