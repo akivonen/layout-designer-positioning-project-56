@@ -4,7 +4,23 @@
 }
 
 @mixin media($max-width) {
-  @media screen and ($max-width) {
+  @media screen and (max-width: $max-width) {
     @content;
   }
+}
+
+@mixin container-flex(
+  $row-gap: 16px,
+  $col-gap: 16px,
+  $justify-content: flex-start,
+  $align-items: center,
+  $flex-direction: row,
+  $flex-wrap: wrap,
+) {
+  display: flex;
+  gap: #{$row-gap} #{$col-gap};
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-direction: $flex-direction;
+  flex-wrap: $flex-wrap;
 }

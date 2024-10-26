@@ -7,6 +7,51 @@
   <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-  
+  <header class="header">
+    <div class="container header-container">
+      <nav class="header-nav">
+        <a class="header-nav-logo-group">
+          <img src="images/logo.svg" width="24" height="24" alt="Music box logo">
+          <span>Music Box</span>
+        </a>
+        <ul class="header-nav-menu">
+          <li>
+            <a class="t-white" href="index.html">Главная</a>
+          </li>
+          <li>
+            <a class="t-dark-gray" href="#">Каталог</a>
+          </li>
+          <li>
+            <a class="t-dark-gray" href="artist.html">Исполнители</a>
+          </li>
+          <li>
+            <a class="t-dark-gray" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <form id="header-search-form" class="header-search-form" action="">
+        <label class="visually-hidden" for="header-search-input">Поиск</label>
+        <input class="header-search-input" id="header-search-input" name="search" type="search" placeholder="Поиск..." required>
+      </form>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="page-description" class="page-description bg-banner">
+      <div class="container page-description-container">
+        <h1 class="heading-primary">Онлайн музыка где угодно</h1>
+        <h2 class="heading-secondary">без ограничений</h2>
+        <p>Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир
+          музыки.</p>
+        <form class="hero-form" action="">
+          <label class="visually-hidden" for="hero-form-name">Имя</label>
+          <input type="text" class="hero-form-name" id="hero-form-name" name="name" placeholder="Имя" required>
+          <label class="visually-hidden" for="hero-form-email">Email</label>
+          <input type="email" class="hero-form-email" id="hero-form-email" name="email" placeholder="Email" required>
+          <button class="btn hero-form-btn" type="submit">Получить доступ</button>
+        </form>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

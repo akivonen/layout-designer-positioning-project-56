@@ -1,0 +1,74 @@
+.header {
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  &-container {
+    width: 100%;
+    margin: 0 auto;
+    @include container-flex(1rem, 0, space-between, normal);
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 0;
+    color: $white;
+    font-size: 11px;
+    text-transform: uppercase;
+    @include media($mobile) {
+      flex-direction: column;
+    }
+  }
+  &-nav {
+    @include container-flex(1rem, 90px, space-between);
+    @include media($mobile) {
+      flex-direction: column;
+      align-items: normal;
+    }
+    &-logo-group {
+      @include container-flex(0, 1rem, space-between);
+      @include media($mobile) {
+        justify-content: flex-start;
+      }
+    }
+    &-menu {
+      @include container-flex(0, 24px);
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      @include media($mobile) {
+        flex-direction: column;
+        align-items: normal;
+      }
+    }
+  }
+  &-search-input {
+    width: 248px;
+    height: 25px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: none;
+    background-color: $dark-grey;
+    &::placeholder {
+      font-size: 13.3px;
+      line-height: 15px;
+      color: $light-grey;
+      text-transform: uppercase;
+    }
+    @include media($mobile) {
+      width: 100%;
+    }
+  }
+
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
