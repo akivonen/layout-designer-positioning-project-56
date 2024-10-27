@@ -4,7 +4,7 @@
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-    color: $white;
+    color: map.get($colors, 'white');
   }
 }
 .heading-primary{
@@ -27,13 +27,13 @@
     min-width: 270px;
     min-height: 50px;
     border-radius: 3px;
-    border: 2px solid $primary;
+    border: 2px solid map.get($colors, 'primary');;
     background-color: transparent;
     padding-left: 20px;
     &::placeholder {
-      color: $white;
+      color: map.get($colors, 'white');
       font-size: 14px;
-      line-height: 16px;
+      line-height: 16.41px;
       font-weight: 700;
     }
     @include media($mobile) {
@@ -45,9 +45,8 @@
     height: 57px;
     padding: 20px 30px;
     border-radius: 5px;
-    background: #34C176;
     font-size: 13.3px;
-    color:$white;
+    color:map.get($colors, 'white');
     text-transform: uppercase;
   }
 }

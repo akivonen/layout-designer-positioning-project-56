@@ -3,15 +3,12 @@
   position: relative;
   justify-content: center;
   &-container {
-    width: 100%;
-    margin: 0 auto;
     @include container-flex(1rem, 0, space-between, normal);
     position: absolute;
     top: 25px;
     left: 0;
     right: 0;
-    color: $white;
-    font-size: 11px;
+    font-size: map.get($text-sizes, 'xs');
     text-transform: uppercase;
     @include media($mobile) {
       flex-direction: column;
@@ -46,11 +43,11 @@
     padding: 5px 10px;
     border-radius: 50px;
     border: none;
-    background-color: $dark-grey;
+    background-color: map.get($colors, 'dark-grey');;
     &::placeholder {
       font-size: 13.3px;
       line-height: 15px;
-      color: $light-grey;
+      color: map.get($colors, 'light-grey');
       text-transform: uppercase;
     }
     @include media($mobile) {
