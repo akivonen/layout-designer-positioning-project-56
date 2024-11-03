@@ -1,8 +1,10 @@
 @use "sass:map";
+@use "sass:string";
 @import "fonts";
 @import "variables";
 @import "mixins";
 @import "general";
 @import "header";
 @import "page-description";
+@import "page-pricing";
 @import "footer";

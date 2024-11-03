@@ -14,7 +14,7 @@
           <img src="images/logo.svg" width="24" height="24" alt="Music box logo">
           <span class="text-white">Music Box</span>
         </a>
-        <ul class="header-nav-menu">
+        <ul class="header-nav-menu m-0 p-0">
           <li>
             <a class="text-white" href="index.html">Главная</a>
           </li>
@@ -31,32 +31,58 @@
       </nav>
       <form id="header-search-form" class="header-search-form" action="">
         <label class="visually-hidden" for="header-search-input">Поиск</label>
-        <input class="header-search-input" id="header-search-input" name="search" type="search" placeholder="Поиск..." required>
+        <input class="header-search-input py-5px px-10px" id="header-search-input" name="search" type="search" placeholder="Поиск..." required>
       </form>
       </div>
     </div>
   </header>
   <main>
     <section id="page-description" class="page-description bg-banner">
-      <div class="container page-description-container">
-        <h1 class="heading-primary">Онлайн музыка где угодно</h1>
-        <h2 class="heading-secondary">без ограничений</h2>
+      <div class="container page-description-container py-200px">
+        <h1 class="m-0">Онлайн музыка где угодно</h1>
+        <h2 class="mt-0">без ограничений</h2>
         <p>Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир
           музыки.</p>
         <form class="hero-form" action="">
           <label class="visually-hidden" for="hero-form-name">Имя</label>
-          <input type="text" class="hero-form-name" id="hero-form-name" name="name" placeholder="Имя" required>
+          <input type="text" class="hero-form-name pl-20px" id="hero-form-name" name="name" placeholder="Имя" required>
           <label class="visually-hidden" for="hero-form-email">Email</label>
-          <input type="email" class="hero-form-email" id="hero-form-email" name="email" placeholder="Email" required>
-          <button class="btn btn-green hero-form-btn" type="submit">Получить доступ</button>
+          <input type="email" class="hero-form-email pl-20px" id="hero-form-email" name="email" placeholder="Email" required>
+          <button class="btn btn-green" type="submit">Получить доступ</button>
         </form>
+      </div>
+    </section>
+    <section id="page-pricing" class="page-pricing">
+      <div class="container page-pricing-container pt-100px">
+        <h2 class="m-0">Формы подписки</h2>
+        <div class="pricing pt-48px pb-40px">
+          <div class="pricing-item bg-free">
+            <h3 class="text-lg mb-200px">Бесплатная</h3>
+            <p class="pricing-value mt-0 mb-40px"><span class="pricing-value-cost text-5xl mr-1rem">0</span> <span class="pricing-value-currency text-xl">руб.</span></p>
+            <a href="#" class="btn mb-64px">Оформить</a>
+            <p class="pricing-footer">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p>
+          </div>
+          <div class="pricing-item bg-standard">
+            <h3 class="text-lg mb-200px">Стандартная</h3>
+            <p class="pricing-value mt-0 mb-40px"><span class="pricing-value-cost text-5xl mr-1rem">250</span> <span class="pricing-value-currency text-xl">руб.</span></p>
+            <a href="#" class="btn mb-64px">Оформить</a>
+            <p class="pricing-footer">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p>
+          </div>
+          <div class="pricing-item bg-premium">
+            <h3 class="text-lg mb-200px">Премиум</h3>
+            <p class="pricing-value mt-0 mb-40px"><span class="pricing-value-cost text-5xl mr-1rem">500</span> <span class="pricing-value-currency text-xl">руб.</span></p>
+            <a href="#" class="btn mb-64px">Оформить</a>
+            <p class="pricing-footer">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p>
+          </div>
+        </div>
+        <p>На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <div class="container footer-links-container">
+    <div class="container footer-links-container pt-50px pb-64px">
       <div>
-        <h4 class="h4-bold">О нас</h2>
+        <h4 class="h4-bold mt-0 mb-16px">О нас</h2>
         <ul>
           <li>
             <a href="#">История компании</a>
@@ -73,7 +99,7 @@
         </ul>
       </div>
       <div>
-        <h4 class="h4-bold">Поддержка</h2>
+        <h4 class="h4-bold mt-0 mb-16px">Поддержка</h2>
         <ul>
           <li>
             <a href="#">База знаний</a>
@@ -90,7 +116,7 @@
         </ul>
       </div>
       <div>
-        <h4 class="h4-bold">Контакты</h2>
+        <h4 class="h4-bold mt-0 mb-16px">Контакты</h2>
         <ul>
           <li>
             <a href="mailto:hello@music.box">hello@music.box</a>
@@ -102,7 +128,7 @@
         </ul>
       </div>
       <div>
-        <h4 class="h4-bold">Подписывайтесь</h4>
+        <h4 class="h4-bold mt-0 mb-16px">Подписывайтесь</h4>
         <ul class="footer-social-container">
           <li>
             <a href="#">
@@ -118,7 +144,7 @@
       </div>
     </div>
     <hr>
-    <div class="container footer-menu-container">
+    <div class="container footer-menu-container pt-30px pb-50px">
       <ul class="footer-list-container">
         <li>
           <a href="#">Магазин</a>

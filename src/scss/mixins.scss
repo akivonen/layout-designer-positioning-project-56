@@ -25,6 +25,12 @@
   flex-wrap: $flex-wrap;
 }
 
+@mixin bg-img($path) {
+  background-image: url($path);
+  background-position: center;
+  background-size: cover;
+}
+
 @mixin text-color($color-name, $value) {
   .text-#{$color-name} {
     color: $value;
@@ -34,5 +40,24 @@
 @mixin text-size($size-name, $value) {
   .text-#{$size-name} {
     font-size: $value;
+  }
+}
+
+@mixin margin-padding-size($side, $value, $type) {
+  @if ($side == y) {
+    .#{string.slice($type, 1, 1)}#{$side}-#{$value} {
+      #{$type}-top: $value;
+      #{$type}-bottom: $value;
+    }
+    
+  } @else if ($side == x) {
+    .#{string.slice($type, 1, 1)}#{$side}-#{$value} {
+      #{$type}-left: $value;
+      #{$type}-right: $value;
+    }
+  } @else {
+    .#{string.slice($type, 1, 1)}#{string.slice($side, 1, 1)}-#{$value} {
+      #{$type}-#{$side}: $value;
+    }
   }
 }

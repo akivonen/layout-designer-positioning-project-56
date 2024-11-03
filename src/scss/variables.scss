@@ -23,5 +23,61 @@ $text-sizes: (
   "xs": 11px,
 );
 
+$margins: (
+  "top": (
+    0,
+
+  ),
+  "right": (
+    0,
+    1rem,
+  ),
+  "bottom": (
+    0,
+    16px,
+    40px,
+    48px,
+    64px,
+    200px,
+  ),
+  "left": (
+    0,
+  ),
+);
+
+$paddings: (
+  "top": (
+    0,
+    30px,
+    48px,
+    50px,
+    100px,
+    200px,
+  ),
+  "right": (
+    0,
+
+  ),
+  "bottom": (
+    0,
+    40px,
+    50px,
+    64px,
+    200px,
+  ),
+  "left": (
+    0,
+    20px,
+  ),
+  "y": (  // vertical
+    5px,
+    200px,
+  ),
+  "x": (  // horizontal
+    10px
+  ),
+);
+
+
 $mobile: 1239px;
 $screen-medium: 768px;
