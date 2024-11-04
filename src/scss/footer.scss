@@ -5,11 +5,11 @@
     display: grid;
     gap: 15px 40px;
     grid-template-columns: repeat(4, minmax(270px, 1fr));
-    @include media($mobile) {
+    @include media($screen-large) {
       grid-template-columns: repeat(2, minmax(270px, 1fr));
       gap: 30px;
     }
-    @include media($screen-medium) {
+    @include media($screen-small) {
       grid-template-columns: 1fr;
     }
   }
@@ -21,7 +21,7 @@
   }
   &-list-container {
     @include container-flex(1rem, 1rem, flex-start);
-    @include media($mobile) {
+    @include media($screen-large) {
       flex-direction: column;
       align-items: flex-start;
     }

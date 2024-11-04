@@ -5,6 +5,9 @@
   }
   &-item {
     @include container-flex(16px, 50px);
+    @include media($screen-medium) {
+      justify-content: center;
+    }
   }
   &-image {
     flex-basis: 575px;

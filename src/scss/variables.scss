@@ -77,10 +77,12 @@ $paddings: (
     200px,
   ),
   "x": (  // horizontal
-    10px
+    10px,
+    24px,
   ),
 );
 
 
-$mobile: 1239px;
-$screen-medium: 768px;
+$screen-large: 1239px;
+$screen-medium: 1024px;
+$screen-small: 768px;

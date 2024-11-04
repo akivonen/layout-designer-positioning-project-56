@@ -1,15 +1,14 @@
-.page-pricing-container {
-  text-align: center;
-}
 .pricing {
-  @include container-flex(50px, 50px, center);
+  @include container-flex(50px, 50px, normal);
+  @include media($screen-large) {
+    justify-content: center;
+  }
   &-item {
-    flex-basis: 367px;
-    padding: 1rem 1.5rem 4rem 1.5rem;
+    flex-basis: 366px;
     border-radius: 1rem;
     h3 {
       line-height: 36px;
-      @include media($mobile) {
+      @include media($screen-large) {
         font-size: 16px;
         line-height: 24px;
       }

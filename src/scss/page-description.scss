@@ -1,7 +1,6 @@
 .page-description {
   display: flex;
   &-container{
-    text-align: center;
     color: map.get($colors, 'white');
   }
 }
@@ -23,7 +22,7 @@
       line-height: 16px;
       font-weight: 700;
     }
-    @include media($mobile) {
+    @include media($screen-small) {
       width: 100%;
     }
   }

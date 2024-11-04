@@ -53,7 +53,7 @@ h1 {
   font-size: 60px;
   line-height: 90px;
 }
-@media screen and (max-width: 1239px) {
+@media screen and (max-width: 1024px) {
   h1 {
     font-size: 30px;
     line-height: 45px;
@@ -64,7 +64,7 @@ h2 {
   font-size: 38px;
   line-height: 57px;
 }
-@media screen and (max-width: 1239px) {
+@media screen and (max-width: 1024px) {
   h2 {
     font-size: 18px;
     line-height: 27px;
@@ -76,7 +76,7 @@ h3 {
   line-height: 45px;
   font-weight: 400;
 }
-@media screen and (max-width: 1239px) {
+@media screen and (max-width: 1024px) {
   h3 {
     font-size: 16px;
     line-height: 24px;
@@ -188,6 +188,10 @@ h4 {
 
 .text-brown {
   color: #95390C;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-5xl {
@@ -362,6 +366,11 @@ h4 {
   padding-right: 10px;
 }
 
+.px-24px {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 .header {
   width: 100%;
   position: relative;
@@ -381,7 +390,7 @@ h4 {
   font-size: 11px;
   text-transform: uppercase;
 }
-@media screen and (max-width: 1239px) {
+@media screen and (max-width: 768px) {
   .header-container {
     flex-direction: column;
   }
@@ -394,7 +403,7 @@ h4 {
   flex-direction: row;
   flex-wrap: wrap;
 }
-@media screen and (max-width: 1239px) {
+@media screen and (max-width: 768px) {
   .header-nav {
     flex-direction: column;
     align-items: normal;
@@ -408,7 +417,7 @@ h4 {
   flex-direction: row;
   flex-wrap: wrap;
 }
-@media screen and (max-width: 1239px) {
+@media screen and (max-width: 768px) {
   .header-nav-logo-group {
     justify-content: flex-start;
   }
@@ -421,7 +430,7 @@ h4 {
   flex-direction: row;
   flex-wrap: wrap;
 }
-@media screen and (max-width: 1239px) {
+@media screen and (max-width: 768px) {
   .header-nav-menu {
     flex-direction: column;
     align-items: normal;
@@ -440,7 +449,7 @@ h4 {
   color: #757575;
   text-transform: uppercase;
 }
-@media screen and (max-width: 1239px) {
+@media screen and (max-width: 768px) {
   .header-search-input {
     width: 100%;
   }
@@ -463,7 +472,6 @@ h4 {
   display: flex;
 }
 .page-description-container {
-  text-align: center;
   color: #fff;
 }
 
@@ -490,27 +498,27 @@ h4 {
   line-height: 16px;
   font-weight: 700;
 }
-@media screen and (max-width: 1239px) {
+@media screen and (max-width: 768px) {
   .hero-form-name, .hero-form-email {
     width: 100%;
   }
 }
 
-.page-pricing-container {
-  text-align: center;
-}
-
 .pricing {
   display: flex;
   gap: 50px 50px;
-  justify-content: center;
+  justify-content: normal;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 1239px) {
+  .pricing {
+    justify-content: center;
+  }
+}
 .pricing-item {
-  flex-basis: 367px;
-  padding: 1rem 1.5rem 4rem 1.5rem;
+  flex-basis: 366px;
   border-radius: 1rem;
 }
 .pricing-item h3 {
@@ -550,6 +558,11 @@ h4 {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 1024px) {
+  .news-item {
+    justify-content: center;
+  }
 }
 .news-image {
   flex-basis: 575px;

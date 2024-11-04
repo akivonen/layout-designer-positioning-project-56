@@ -40,7 +40,7 @@ h1 {
   font-size: 60px;
   line-height: 90px;
 
-  @include media($mobile) {
+  @include media($screen-medium) {
     font-size: 30px;
     line-height: 45px;
   }
@@ -50,7 +50,7 @@ h2 {
   font-size: 38px;
   line-height: 57px;
 
-  @include media($mobile) {
+  @include media($screen-medium) {
     font-size: 18px;
     line-height: 27px;
   }
@@ -60,7 +60,7 @@ h3 {
   font-size: 34px;
   line-height: 45px;
   font-weight: 400;
-  @include media($mobile) {
+  @include media($screen-medium) {
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
@@ -80,7 +80,7 @@ h4 {
 .container {
   width: 1200px;
   margin: 0 auto;
-  @include media($mobile) {
+  @include media($screen-large) {
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
@@ -122,6 +122,10 @@ h4 {
 
 @each $color-name, $value in $colors {
   @include text-color($color-name, $value);
+}
+
+.text-center {
+  text-align: center;
 }
 
 @each $text-name, $value in $text-sizes {
