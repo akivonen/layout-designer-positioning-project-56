@@ -8,7 +8,7 @@
     top: 25px;
     left: 0;
     right: 0;
-    font-size: map.get($text-sizes, 'xs');
+    font-size: map.get($text-sizes, 'xxs');
     text-transform: uppercase;
     @include media($mobile) {
       flex-direction: column;

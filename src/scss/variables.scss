@@ -20,13 +20,14 @@ $text-sizes: (
   "lg": 24px,
   "base": 16px,
   "sm": 12.8px,
-  "xs": 11px,
+  "xs": 12px,
+  "xxs": 11px,
 );
 
 $margins: (
   "top": (
     0,
-
+    48px,
   ),
   "right": (
     0,
@@ -60,6 +61,7 @@ $paddings: (
   ),
   "bottom": (
     0,
+    24px,
     40px,
     50px,
     64px,
@@ -71,6 +73,7 @@ $paddings: (
   ),
   "y": (  // vertical
     5px,
+    16px,
     200px,
   ),
   "x": (  // horizontal
