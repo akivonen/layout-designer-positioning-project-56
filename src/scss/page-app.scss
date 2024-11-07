@@ -1,0 +1,16 @@
+.app {
+  @include container-flex(16px, 144px, flex-start, center);
+  @include media($screen-large) {
+    flex-direction: column-reverse;
+  }
+  &-download {
+    flex-basis: 600px;
+    @include media($screen-large) {
+      flex-basis: auto;
+    }
+    .btn {
+      border-radius: 32px;
+      text-transform: capitalize;
+    }
+  }
+}
