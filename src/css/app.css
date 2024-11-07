@@ -657,6 +657,26 @@ h4 {
   flex-wrap: wrap;
 }
 
+.popular-track-list {
+  display: grid;
+  gap: 25px 50px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 550px));
+}
+.popular-track-item a {
+  display: flex;
+  gap: 16px 16px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.popular-track-item h3 {
+  line-height: 1.5em;
+}
+.popular-track-item time {
+  margin-left: auto;
+}
+
 .footer {
   background: linear-gradient(265.08deg, #95390C 14.9%, #5328A1 68.95%);
   min-height: 387px;
@@ -668,8 +688,9 @@ h4 {
 }
 @media screen and (max-width: 1239px) {
   .footer-links-container {
+    display: grid;
+    gap: 30px 40px;
     grid-template-columns: repeat(2, minmax(270px, 1fr));
-    gap: 30px;
   }
 }
 @media screen and (max-width: 768px) {

@@ -1,0 +1,16 @@
+.popular-track {
+  &-list {
+    @include container-grid(25px, 50px, minmax(300px, 550px));
+  }
+  &-item {
+    a {
+      @include container-flex();
+    }
+    h3 {
+      line-height: 1.5em;
+    }
+    time {
+      margin-left: auto;
+    }
+  }
+}

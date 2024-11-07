@@ -18,11 +18,22 @@
   $flex-wrap: wrap,
 ) {
   display: flex;
-  gap: #{$row-gap} #{$col-gap};
+  gap: $row-gap $col-gap;
   justify-content: $justify-content;
   align-items: $align-items;
   flex-direction: $flex-direction;
   flex-wrap: $flex-wrap;
+}
+
+@mixin container-grid(
+  $row-gap: 15px,
+  $col-gap: 40px,
+  $size: auto,
+  $cols-count: auto-fill,
+) {
+  display: grid;
+  gap: $row-gap $col-gap;
+  grid-template-columns: repeat($cols-count, $size);
 }
 
 @mixin bg-img($path) {
