@@ -26,9 +26,9 @@
 }
 
 @mixin container-grid(
+  $size: auto,
   $row-gap: 15px,
   $col-gap: 40px,
-  $size: auto,
   $cols-count: auto-fill,
 ) {
   display: grid;

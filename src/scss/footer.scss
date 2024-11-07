@@ -2,9 +2,9 @@
   background: linear-gradient(265.08deg, #95390C 14.9%, #5328A1 68.95%);
   min-height: 387px;
   &-links-container {
-    @include container-grid(15px, 40px, minmax(270px, 1fr), 4);
+    @include container-grid(minmax(270px, 1fr));
     @include media($screen-large) {
-      @include container-grid(30px, 40px, minmax(270px, 1fr), 2);
+      @include container-grid(minmax(270px, 1fr), 30px, 40px, 2);
     }
     @include media($screen-small) {
       grid-template-columns: 1fr;
