@@ -1,0 +1,9 @@
+.artist {
+  &-actions {
+    @include container-flex(1.5rem, 1.5rem);
+    button {
+      width: 200px;
+      @include container-flex(1.5rem);
+    }
+  }
+}

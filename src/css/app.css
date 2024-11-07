@@ -124,8 +124,11 @@ h4 {
 .btn-transparent {
   border: 1px solid #fff;
 }
-.btn-brown {
+.btn-korma {
   background: #95390C;
+}
+.btn-purple {
+  background: #5328A1;
 }
 
 .bg-banner {
@@ -148,6 +151,12 @@ h4 {
 
 .bg-premium {
   background-image: url("../images/subscribe_3.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-artist {
+  background-image: url("../images/Morten Harket.png");
   background-position: center;
   background-size: cover;
 }
@@ -188,7 +197,7 @@ h4 {
   color: #5328A1;
 }
 
-.text-brown {
+.text-korma {
   color: #95390C;
 }
 
@@ -246,6 +255,10 @@ h4 {
 
 .w-full {
   width: 100%;
+}
+
+.invert {
+  filter: invert(1);
 }
 
 .mt-0 {
@@ -320,6 +333,10 @@ h4 {
   padding-top: 200px;
 }
 
+.pt-250px {
+  padding-top: 250px;
+}
+
 .pr-0 {
   padding-right: 0;
 }
@@ -369,6 +386,11 @@ h4 {
 .py-200px {
   padding-top: 200px;
   padding-bottom: 200px;
+}
+
+.py-250px {
+  padding-top: 250px;
+  padding-bottom: 250px;
 }
 
 .px-10px {
@@ -480,13 +502,6 @@ h4 {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.page-description {
-  display: flex;
-}
-.page-description-container {
-  color: #fff;
 }
 
 .hero-form {
@@ -622,6 +637,24 @@ h4 {
 .app-download .btn {
   border-radius: 32px;
   text-transform: capitalize;
+}
+
+.artist-actions {
+  display: flex;
+  gap: 1.5rem 1.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.artist-actions button {
+  width: 200px;
+  display: flex;
+  gap: 1.5rem 16px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .footer {

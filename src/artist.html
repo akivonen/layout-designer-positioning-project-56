@@ -4,9 +4,141 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Music Box user-7640056aeaa3f39e</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-  
+  <header class="header w-full">
+    <div class="container header-container">
+      <nav class="header-nav">
+        <a class="header-nav-logo-group">
+          <img src="images/logo.svg" width="24" height="24" alt="Music box logo" loading="lazy">
+          <span class="text-white">Music Box</span>
+        </a>
+        <ul class="header-nav-menu m-0 p-0">
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <li>
+            <a href="#">Каталог</a>
+          </li>
+          <li>
+            <a class="text-white" href="artist.html">Исполнители</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <form id="header-search-form" class="header-search-form" action="">
+        <label class="visually-hidden" for="header-search-input">Поиск</label>
+        <input class="header-search-input py-5px px-10px" id="header-search-input" name="search" type="search" placeholder="Поиск..." required>
+      </form>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="page-description" class="artist bg-artist">
+      <div class="container artist-container py-250px">
+        <h1 class="m-0">Morten Harket</h1>
+        <p class="mt-16px">24 875 поклонников</p>
+        <div class="artist-actions mt-48px">
+          <button href="#" class="btn btn-purple">
+            <img class="invert" src="images/play-button.svg" width="20" height="20" alt="button play">
+            <span class="text-sm">Микс</span>
+          </button>
+          <button href="#" class="btn btn-korma">
+            <img class="invert" src="images/heart.svg" width="20" height="20" alt="button add to favorites">
+            <span class="text-sm">В избранное</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-links-container pt-50px pb-64px">
+      <div>
+        <h4 class="h4-bold mt-0 mb-16px">О нас</h2>
+        <ul>
+          <li>
+            <a href="#">История компании</a>
+          </li>
+          <li>
+            <a href="#">Карьера</a>
+          </li>
+          <li>
+            <a href="#">Особенности</a>
+          </li>
+          <li>
+            <a href="#">Пресса</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="h4-bold mt-0 mb-16px">Поддержка</h2>
+        <ul>
+          <li>
+            <a href="#">База знаний</a>
+          </li>
+          <li>
+            <a href="#">Тарифы</a>
+          </li>
+          <li>
+            <a href="#">Мобильное приложение</a>
+          </li>
+          <li>
+            <a href="#">Условия использования</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="h4-bold mt-0 mb-16px">Контакты</h2>
+        <ul>
+          <li>
+            <a href="mailto:hello@music.box">hello@music.box</a>
+          </li>
+          <li><span>Russia, Moscow. Music Box studio</span></li>
+          <li>
+            <a href="tel:+74999999999">+ 7 499 999 99 99</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="h4-bold mt-0 mb-16px">Подписывайтесь</h4>
+        <ul class="footer-social-container">
+          <li>
+            <a href="#">
+              <img src="images/Google+.png" alt="Google+ Logo" loading="lazy">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/Twitter.png" alt="Twitter Logo" loading="lazy">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="container footer-menu-container pt-30px pb-50px">
+      <ul class="footer-list-container">
+        <li>
+          <a href="#">Магазин</a>
+        </li>
+        <li>
+          <a href="#">Обслуживание</a>
+        </li>
+        <li>
+          <a href="#">Блог</a>
+        </li>
+        <li>
+          <a href="#">Поддержка</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
