@@ -1,11 +1,1 @@
-.discography {
-  &-list {
-    @include container-grid(250px, 25px, 50px);
-    h4 {
-      text-transform: capitalize;
-    }
-    @include media($screen-medium) {
-      grid-template-columns: repeat(auto-fill, 137px);
-    }
-  }
-}
+@include container-grid-list('discography');

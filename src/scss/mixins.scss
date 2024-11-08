@@ -27,13 +27,28 @@
 
 @mixin container-grid(
   $size: auto,
-  $row-gap: 15px,
-  $col-gap: 40px,
+  $row-gap: 50px,
+  $col-gap: 25px,
   $cols-count: auto-fill,
 ) {
   display: grid;
   gap: $row-gap $col-gap;
   grid-template-columns: repeat($cols-count, $size);
+}
+
+@mixin container-grid-list($name) {
+  .#{$name} {
+    &-list {
+      @include container-grid(250px);
+      h4 {
+        text-transform: capitalize;
+      }
+      @include media($screen-medium) {
+        grid-template-columns: repeat(auto-fill, 137px);
+      }
+    }
+    @content
+  }
 }
 
 @mixin bg-img($path) {

@@ -1,6 +1,6 @@
 .popular-track {
   &-list {
-    @include container-grid(minmax(300px, 550px), 25px, 50px);
+    @include container-grid(minmax(300px, 550px));
   }
   &-item {
     a {

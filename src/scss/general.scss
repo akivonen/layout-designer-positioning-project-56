@@ -32,6 +32,11 @@ a {
 img {
   display: block;
 }
+
+input {
+  color: map.get($colors, 'primary');
+}
+
 h1, h2, h3, h4 {
   color: map.get($colors, 'white');
   @include bold-uppercase;
