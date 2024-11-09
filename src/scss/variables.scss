@@ -47,6 +47,9 @@ $margins: (
   "left": (
     0,
   ),
+  "y": (  // vertical
+    16px,
+  ),
 );
 
 $paddings: (
@@ -70,6 +73,7 @@ $paddings: (
     50px,
     64px,
     200px,
+    225px,
   ),
   "left": (
     0,
@@ -80,6 +84,8 @@ $paddings: (
     16px,
     200px,
     250px,
+    2rem,
+    3rem,
   ),
   "x": (  // horizontal
     10px,

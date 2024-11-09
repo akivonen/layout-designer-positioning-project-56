@@ -1,6 +1,8 @@
 .footer {
-  background: linear-gradient(265.08deg, #95390C 14.9%, #5328A1 68.95%);
-  min-height: 387px;
+  h2 {
+    line-height: 27px;
+  }
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
   &-links-container {
     @include container-grid(minmax(270px, 1fr), 15px, 40px);
     @include media($screen-large) {
