@@ -4,6 +4,7 @@
     justify-content: center;
   }
   &-item {
+    color: map.get($colors, 'white');
     flex-basis: 366px;
     border-radius: 1rem;
     h3 {

@@ -99,14 +99,14 @@ h4 {
 }
 
 .container {
-  width: 1200px;
+  width: 1240px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 @media screen and (max-width: 1239px) {
   .container {
     width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 }
 
@@ -536,7 +536,7 @@ h4 {
 }
 
 @media screen and (max-width: 768px) {
-  .page-description-container {
+  .page-description {
     padding-top: 250px;
   }
 }
@@ -584,6 +584,7 @@ h4 {
   }
 }
 .pricing-item {
+  color: #fff;
   flex-basis: 366px;
   border-radius: 1rem;
 }
