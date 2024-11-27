@@ -1,7 +1,7 @@
 .artist {
   &-container {
-    @include media($screen-small) {
-      
+    @include media($screen-medium) {
+      padding-top: 225px;
     }
   }
   &-actions {

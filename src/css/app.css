@@ -681,6 +681,11 @@ h4 {
   text-transform: capitalize;
 }
 
+@media screen and (max-width: 1024px) {
+  .artist-container {
+    padding-top: 225px;
+  }
+}
 .artist-actions {
   display: flex;
   gap: 1.5rem 1.5rem;
