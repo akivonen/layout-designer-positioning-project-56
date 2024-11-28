@@ -543,7 +543,7 @@ h4 {
 
 @media screen and (max-width: 768px) {
   .page-description-container {
-    padding-top: 245px;
+    padding-top: 247px;
   }
 }
 
@@ -566,8 +566,9 @@ h4 {
 }
 .hero-form-name::placeholder, .hero-form-email::placeholder {
   color: #fff;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 16.41px;
   font-weight: 700;
 }
 @media screen and (max-width: 768px) {

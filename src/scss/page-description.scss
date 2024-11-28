@@ -1,6 +1,6 @@
 .page-description-container {
   @include media($screen-small) {
-    padding-top: 245px;
+    padding-top: 247px;
   }
 }
 .hero-form {
@@ -16,8 +16,9 @@
     background-color: transparent;
     &::placeholder {
       color: map.get($colors, 'white');
+      font-family: Roboto, sans-serif;
       font-size: 14px;
-      line-height: 16px;
+      line-height: 16.41px;
       font-weight: 700;
     }
     @include media($screen-small) {
