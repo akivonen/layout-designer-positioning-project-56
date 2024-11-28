@@ -39,6 +39,7 @@ input {
 
 h1, h2, h3, h4 {
   color: map.get($colors, 'white');
+  
   @include bold-uppercase;
 }
 
@@ -126,6 +127,7 @@ h4 {
 
 .bg-banner {
   @include bg-img("../images/banner.png");
+  
   background-position: center;
 }
 
@@ -143,6 +145,7 @@ h4 {
 
 .bg-artist {
   @include bg-img("../images/Morten Harket.png");
+  
   background-position: center;
 }
 

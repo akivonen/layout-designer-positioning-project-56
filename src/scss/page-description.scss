@@ -6,6 +6,7 @@
 
 .hero-form {
   @include container-flex(1.5rem, 30px);
+  
   max-width: 570px;
   margin: 0 auto;
   

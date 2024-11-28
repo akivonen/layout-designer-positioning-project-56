@@ -17,6 +17,7 @@
     h3 {
       font-weight: 400;
       line-height: 36px;
+      
       @include media($screen-large) {
         font-size: 16px;
         line-height: 24px;
@@ -26,7 +27,7 @@
 
   &-value {
     text-transform: uppercase;
-    
+
     &-cost {
       line-height: 1em;
     }

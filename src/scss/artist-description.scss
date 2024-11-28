@@ -1,6 +1,5 @@
 .artist {
   &-container {
-    
     @include media($screen-medium) {
       padding-top: 225px;
     }
@@ -11,6 +10,7 @@
     
     button {
       width: 200px;
+      
       @include container-flex(1.5rem);
     }
   }

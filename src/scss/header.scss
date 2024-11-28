@@ -3,8 +3,8 @@
   justify-content: center;
   
   &-container {
-    
     @include container-flex(18px, 0, space-between, normal);
+    
     position: absolute;
     top: 25px;
     left: 0;
@@ -16,6 +16,7 @@
       flex-direction: column;
     }
   }
+  
   &-nav {
     @include container-flex(1rem, 90px, space-between);
     
@@ -23,6 +24,7 @@
       flex-direction: column;
       align-items: normal;
     }
+    
     &-logo-group {
       @include container-flex(0, 1rem, space-between);
       
@@ -30,6 +32,7 @@
         justify-content: flex-start;
       }
     }
+    
     &-menu {
       @include container-flex(0, 24px);
       
@@ -39,6 +42,7 @@
       }
     }
   }
+  
   &-search-input {
     width: 248px;
     height: 25px;
