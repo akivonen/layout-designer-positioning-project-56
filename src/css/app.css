@@ -536,7 +536,7 @@ h4 {
 }
 
 @media screen and (max-width: 768px) {
-  .page-description {
+  .page-description-container {
     padding-top: 250px;
   }
 }
@@ -622,7 +622,7 @@ h4 {
   display: flex;
   gap: 50px 50px;
   justify-content: flex-start;
-  align-items: center;
+  align-items: start;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -660,7 +660,7 @@ h4 {
   display: flex;
   gap: 16px 144px;
   justify-content: flex-start;
-  align-items: center;
+  align-items: start;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -784,7 +784,7 @@ h4 {
 }
 .footer-social-container {
   display: flex;
-  gap: 1rem 1rem;
+  gap: 1rem 1.5rem;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;

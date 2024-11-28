@@ -16,7 +16,7 @@
     color: map.get($colors, 'alto');
   }
   &-social-container {
-    @include container-flex(1rem, 1rem, flex-start, flex-start);
+    @include container-flex(1rem, 1.5rem, flex-start, flex-start);
   }
   &-list-container {
     @include container-flex(1rem, 1rem, flex-start);

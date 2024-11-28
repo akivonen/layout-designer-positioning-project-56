@@ -4,7 +4,7 @@
     flex-direction: row-reverse;
   }
   &-item {
-    @include container-flex(50px, 50px);
+    @include container-flex(50px, 50px, flex-start, start);
     @include media($screen-medium) {
       justify-content: center;
     }
