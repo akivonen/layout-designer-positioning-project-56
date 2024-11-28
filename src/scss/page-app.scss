@@ -12,7 +12,6 @@
     @include media($screen-large) {
       flex-basis: auto;
     }
-    
     &-paragraph {
       @include media($screen-large) {
         margin-top: 0;

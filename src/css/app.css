@@ -454,8 +454,7 @@ h4 {
   gap: 18px 0;
   justify-content: space-between;
   align-items: normal;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   position: absolute;
   top: 25px;
   left: 0;
@@ -473,8 +472,7 @@ h4 {
   gap: 1rem 90px;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 @media screen and (max-width: 768px) {
   .header-nav {
@@ -487,8 +485,7 @@ h4 {
   gap: 0 1rem;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 @media screen and (max-width: 768px) {
   .header-nav-logo-group {
@@ -500,8 +497,7 @@ h4 {
   gap: 0 24px;
   justify-content: flex-start;
   align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 @media screen and (max-width: 768px) {
   .header-nav-menu {
@@ -543,7 +539,7 @@ h4 {
 
 @media screen and (max-width: 768px) {
   .page-description-container {
-    padding-top: 247px;
+    padding-top: 250px;
   }
 }
 
@@ -552,8 +548,7 @@ h4 {
   gap: 1.5rem 30px;
   justify-content: flex-start;
   align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   max-width: 570px;
   margin: 0 auto;
 }
@@ -582,8 +577,7 @@ h4 {
   gap: 50px 50px;
   justify-content: normal;
   align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 @media screen and (max-width: 1239px) {
   .pricing {
@@ -592,13 +586,8 @@ h4 {
 }
 .pricing-item {
   color: #fff;
-  width: 366px;
+  flex-basis: 366px;
   border-radius: 1rem;
-}
-@media screen and (max-width: 768px) {
-  .pricing-item {
-    width: 374px;
-  }
 }
 .pricing-item h3 {
   font-weight: 400;
@@ -625,8 +614,7 @@ h4 {
   gap: 65px 0;
   justify-content: normal;
   align-items: normal;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  flex-flow: column nowrap;
 }
 .news :nth-child(even) {
   flex-direction: row-reverse;
@@ -636,8 +624,7 @@ h4 {
   gap: 50px 50px;
   justify-content: flex-start;
   align-items: start;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 @media screen and (max-width: 1024px) {
   .news-item {
@@ -665,8 +652,7 @@ h4 {
   gap: 16px 16px;
   justify-content: flex-start;
   align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
 .app {
@@ -674,8 +660,7 @@ h4 {
   gap: 16px 144px;
   justify-content: flex-start;
   align-items: start;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 @media screen and (max-width: 1239px) {
   .app {
@@ -711,8 +696,7 @@ h4 {
   gap: 1.5rem 1.5rem;
   justify-content: flex-start;
   align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 .artist-actions button {
   width: 200px;
@@ -720,8 +704,7 @@ h4 {
   gap: 1.5rem 16px;
   justify-content: flex-start;
   align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
 .popular-track-list {
@@ -734,8 +717,7 @@ h4 {
   gap: 16px 16px;
   justify-content: flex-start;
   align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 .popular-track-item h3 {
   line-height: 1.5em;
@@ -806,16 +788,14 @@ h4 {
   gap: 1rem 1.5rem;
   justify-content: flex-start;
   align-items: flex-start;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 .footer-list-container {
   display: flex;
   gap: 1rem 1rem;
   justify-content: flex-start;
   align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 @media screen and (max-width: 1239px) {
   .footer-list-container {
