@@ -543,7 +543,7 @@ h4 {
 
 @media screen and (max-width: 768px) {
   .page-description-container {
-    padding-top: 252px;
+    padding-top: 245px;
   }
 }
 
@@ -672,13 +672,14 @@ h4 {
   display: flex;
   gap: 16px 144px;
   justify-content: flex-start;
-  align-items: center;
+  align-items: start;
   flex-direction: row;
   flex-wrap: wrap;
 }
 @media screen and (max-width: 1239px) {
   .app {
     flex-direction: column-reverse;
+    align-items: center;
   }
 }
 .app-download {
@@ -687,6 +688,11 @@ h4 {
 @media screen and (max-width: 1239px) {
   .app-download {
     flex-basis: auto;
+  }
+}
+@media screen and (max-width: 1239px) {
+  .app-download-paragraph {
+    margin-top: 0;
   }
 }
 .app-download .btn {
