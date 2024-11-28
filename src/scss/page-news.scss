@@ -1,30 +1,37 @@
 .news {
   @include container-flex(65px, 0, normal, normal, column, nowrap);
+  
   :nth-child(even) {
     flex-direction: row-reverse;
   }
+  
   &-item {
     @include container-flex(50px, 50px, flex-start, start);
     @include media($screen-medium) {
       justify-content: center;
     }
   }
+  
   &-image {
     flex-basis: 575px;
     min-width: 350px;
   }
+  
   &-body {
     flex: 1 1 350px;
     max-width: 575px;
+    
     h3 {
       text-transform: capitalize;
     }
+    
     p {
       @include media($screen-medium) {
         padding-top: 16px;
       }
     }
   }
+  
   &-author {
     @include container-flex(16px);
   }

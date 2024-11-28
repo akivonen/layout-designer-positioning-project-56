@@ -3,10 +3,12 @@
     padding-top: 247px;
   }
 }
+
 .hero-form {
   @include container-flex(1.5rem, 30px);
   max-width: 570px;
   margin: 0 auto;
+  
   &-name,
   &-email {
     min-width: 270px;
@@ -14,6 +16,7 @@
     border-radius: 3px;
     border: 2px solid map.get($colors, 'primary');;
     background-color: transparent;
+    
     &::placeholder {
       color: map.get($colors, 'white');
       font-family: Roboto, sans-serif;
@@ -21,6 +24,7 @@
       line-height: 16.41px;
       font-weight: 700;
     }
+    
     @include media($screen-small) {
       width: 100%;
     }

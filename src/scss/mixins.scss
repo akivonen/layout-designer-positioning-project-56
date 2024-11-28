@@ -21,8 +21,7 @@
   gap: $row-gap $col-gap;
   justify-content: $justify-content;
   align-items: $align-items;
-  flex-direction: $flex-direction;
-  flex-wrap: $flex-wrap;
+  flex-flow: $flex-direction $flex-wrap;
 }
 
 @mixin container-grid(
@@ -40,9 +39,11 @@
   .#{$name} {
     &-list {
       @include container-grid(250px);
+
       h4 {
         text-transform: capitalize;
       }
+
       @include media($screen-medium) {
         grid-template-columns: repeat(auto-fill, 137px);
       }
@@ -69,13 +70,13 @@
 }
 
 @mixin margin-padding-size($side, $value, $type) {
-  @if ($side == y) {
+  @if $side == y {
     .#{string.slice($type, 1, 1)}#{$side}-#{$value} {
       #{$type}-top: $value;
       #{$type}-bottom: $value;
     }
     
-  } @else if ($side == x) {
+  } @else if $side == x {
     .#{string.slice($type, 1, 1)}#{$side}-#{$value} {
       #{$type}-left: $value;
       #{$type}-right: $value;
