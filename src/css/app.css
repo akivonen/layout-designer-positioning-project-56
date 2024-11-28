@@ -137,32 +137,29 @@ h4 {
 
 .bg-banner {
   background-image: url("../images/banner.png");
-  background-position: center;
   background-size: cover;
+  background-position: center;
 }
 
 .bg-free {
   background-image: url("../images/subscribe_1.png");
-  background-position: center;
   background-size: cover;
 }
 
 .bg-standard {
   background-image: url("../images/subscribe_2.png");
-  background-position: center;
   background-size: cover;
 }
 
 .bg-premium {
   background-image: url("../images/subscribe_3.png");
-  background-position: center;
   background-size: cover;
 }
 
 .bg-artist {
   background-image: url("../images/Morten Harket.png");
-  background-position: center;
   background-size: cover;
+  background-position: center;
 }
 
 .text-primary {
@@ -271,6 +268,10 @@ h4 {
 
 .mt-0 {
   margin-top: 0;
+}
+
+.mt-16px {
+  margin-top: 16px;
 }
 
 .mt-18px {
@@ -404,6 +405,11 @@ h4 {
   padding-bottom: 16px;
 }
 
+.py-62px {
+  padding-top: 62px;
+  padding-bottom: 62px;
+}
+
 .py-200px {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -445,7 +451,7 @@ h4 {
 }
 .header-container {
   display: flex;
-  gap: 1rem 0;
+  gap: 18px 0;
   justify-content: space-between;
   align-items: normal;
   flex-direction: row;
@@ -537,7 +543,7 @@ h4 {
 
 @media screen and (max-width: 768px) {
   .page-description-container {
-    padding-top: 250px;
+    padding-top: 252px;
   }
 }
 
@@ -585,10 +591,16 @@ h4 {
 }
 .pricing-item {
   color: #fff;
-  flex-basis: 366px;
+  width: 366px;
   border-radius: 1rem;
 }
+@media screen and (max-width: 768px) {
+  .pricing-item {
+    width: 374px;
+  }
+}
 .pricing-item h3 {
+  font-weight: 400;
   line-height: 36px;
 }
 @media screen and (max-width: 1239px) {
@@ -660,7 +672,7 @@ h4 {
   display: flex;
   gap: 16px 144px;
   justify-content: flex-start;
-  align-items: start;
+  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -780,7 +792,7 @@ h4 {
   }
 }
 .footer hr {
-  color: #E0E0E0;
+  background-color: #cacaca;
 }
 .footer-social-container {
   display: flex;

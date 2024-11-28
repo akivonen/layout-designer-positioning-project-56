@@ -119,6 +119,7 @@ h4 {
 
 .bg-banner {
   @include bg-img("../images/banner.png");
+  background-position: center;
 }
 .bg-free {
   @include bg-img("../images/subscribe_1.png");
@@ -131,6 +132,7 @@ h4 {
 }
 .bg-artist {
   @include bg-img("../images/Morten Harket.png");
+  background-position: center;
 }
 
 @each $color-name, $value in $colors {

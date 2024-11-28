@@ -2,7 +2,7 @@
   position: relative;
   justify-content: center;
   &-container {
-    @include container-flex(1rem, 0, space-between, normal);
+    @include container-flex(18px, 0, space-between, normal);
     position: absolute;
     top: 25px;
     left: 0;

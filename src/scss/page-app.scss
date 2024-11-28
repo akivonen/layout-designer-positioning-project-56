@@ -1,5 +1,5 @@
 .app {
-  @include container-flex(16px, 144px, flex-start, start);
+  @include container-flex(16px, 144px, flex-start, center);
   @include media($screen-large) {
     flex-direction: column-reverse;
   }

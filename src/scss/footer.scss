@@ -13,7 +13,7 @@
     }
   }
   hr {
-    color: map.get($colors, 'alto');
+    background-color: map.get($colors, 'primary');
   }
   &-social-container {
     @include container-flex(1rem, 1.5rem, flex-start, flex-start);

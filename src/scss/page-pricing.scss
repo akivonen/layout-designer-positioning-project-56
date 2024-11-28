@@ -5,9 +5,13 @@
   }
   &-item {
     color: map.get($colors, 'white');
-    flex-basis: 366px;
+    width: 366px;
     border-radius: 1rem;
+    @include media($screen-small) {
+      width: 374px;
+    }
     h3 {
+      font-weight: 400;
       line-height: 36px;
       @include media($screen-large) {
         font-size: 16px;
